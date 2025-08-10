@@ -1,50 +1,112 @@
-# Welcome to your Expo app 👋
+# FlickNest 🎬
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+FlickNest is a modern movie platform inspired by Netflix, built with [Expo](https://expo.dev), [React Native](https://reactnative.dev/), and [NativeWind](https://www.nativewind.dev/).
+It aims to provide a simple, beautiful, and fast movie browsing experience for mobile and web.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
-   ```bash
-   npm install
-   ```
+- Browse and search for movies
+- Responsive UI with Tailwind CSS (NativeWind)
+- Built with Expo Router for file-based navigation
+- Ready for Android, iOS, and Web
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Installation
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. **Clone the repository**
 
 ```bash
-npm run reset-project
+git clone https://github.com/Zahed-Hossen/FlickNest.git
+cd FlickNest
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. **Install dependencies**
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 3. **Set up Node.js version**
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+FlickNest requires **Node.js 20.x**.
+If you use [nvm](https://github.com/coreybutler/nvm-windows):
 
-## Join the community
+```bash
+nvm use 20
+```
 
-Join our community of developers creating universal apps.
+### 4. **Start the development server**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start
+```
+
+- Press `a` to open Android emulator
+- Press `i` to open iOS simulator
+- Press `w` to open in web browser
+
+---
+
+## 📁 Project Structure
+
+```
+FlickNest/
+├── app/                # App entry and screens (file-based routing)
+│   ├── _layout.tsx
+│   └── index.tsx
+├── components/         # Reusable UI components
+├── metro.config.js     # Metro bundler config (NativeWind)
+├── tailwind.config.js  # Tailwind/NativeWind config
+├── package.json
+└── ...
+```
+
+---
+
+## 📝 Usage
+
+- Edit files in the `app/` directory to add screens and features.
+- Use [NativeWind](https://www.nativewind.dev/) for styling with Tailwind classes.
+- Navigation is handled by [Expo Router](https://docs.expo.dev/router/introduction/).
+
+---
+
+## 🧑‍💻 Development Scripts
+
+| Command            | Description                      |
+|--------------------|----------------------------------|
+| `npm start`        | Start Expo development server    |
+| `npm run android`  | Run on Android emulator/device   |
+| `npm run ios`      | Run on iOS simulator/device      |
+| `npm run web`      | Run in web browser               |
+| `npm run lint`     | Lint the project                 |
+
+---
+
+## 📚 Documentation & Resources
+
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Docs](https://reactnative.dev/docs/getting-started)
+- [NativeWind Docs](https://www.nativewind.dev/)
+- [Expo Router Docs](https://docs.expo.dev/router/introduction/)
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## 📄 License
+
+[MIT](LICENSE)
+
+---
+
+## 👤 Author
+
+- [Zahed Hossen](https://github.com/Zahed-Hossen)
